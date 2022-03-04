@@ -1,6 +1,15 @@
+:root {
+  --main-font: 'Work Sans', sans-serif;
+}
+
 * {
     box-sizing: border-box;
   }
+
+html * {
+  font-family: var(--main-font);
+  font-weight: 300;
+}
   
   body, html {
     height: 100%;
@@ -11,6 +20,7 @@
   }
   
   a {
+    font-family: var(--main-font);
     text-decoration: none;
     color: #225ca3;
     font-weight: bold;
@@ -20,13 +30,18 @@
   a:hover {
     color: #3486eb;
   }
+
+  p {
+    font-family: var(--main-font);
+    font-weight: 300;
+  }
   
   button {
     background-color: #225ca3;
     border: 0;
     padding: 1%;
     color: white;
-    font-weight: bold;
+    font-family: var(--main-font);
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
@@ -83,7 +98,9 @@
   }
   
   header h1 {
-    font-size: 1em;
+    font-family: var(--main-font);
+    font-weight:700;
+    font-size: 3em;
   }
   
   main {
@@ -131,15 +148,6 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
