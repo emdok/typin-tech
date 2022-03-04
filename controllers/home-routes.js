@@ -42,6 +42,7 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+// Route to locate a single post to edit
 router.get("/post/:id", (req, res) => {
   Post.findOne({
     where: {
