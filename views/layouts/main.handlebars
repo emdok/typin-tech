@@ -15,8 +15,11 @@
   <div class="wrapper">
     <header>
       <nav>
-        <a href="/login">Login</a>
+        {{#if loggedIn}}
         <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
       </nav>
       <h1>
         <a href="/">Typin' Tech</a>
@@ -30,7 +33,9 @@
     </footer>
   </div>
 
+{{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
