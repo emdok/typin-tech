@@ -22,5 +22,5 @@ async function newFormHandler(event) {
     }
   }
   
-  document.querySelector('#create-post').addEventListener('click', newFormHandler);
+  document.getElementById('create-post').addEventListener('click', newFormHandler);
   
