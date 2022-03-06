@@ -1,17 +1,5 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" autocomplete="email" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" autocomplete="current-password" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
 
+{{#if signup}}
 <form class="signup-form">
   <div>
     <label for="username-signup">username:</label>
@@ -29,4 +17,20 @@
     <button type="submit">signup</button>
   </div>
 </form>
-
+<a class="login-link" href="/login">Login instead</a>
+{{else}}
+<form class="login-form">
+  <div>
+    <label for="email-login">email:</label>
+    <input type="text" id="email-login" autocomplete="email" />
+  </div>
+  <div>
+    <label for="password-login">password:</label>
+    <input type="password" id="password-login" autocomplete="current-password" />
+  </div>
+  <div>
+    <button type="submit">login</button>
+  </div>
+</form>
+<a class="login-link" href="/signup">Sign Up Instead</a>
+{{/if}}
