@@ -8,9 +8,10 @@
     <div class="mb-3">
       <input class="form-control" name="post-title" type="text" value="{{post.title}}" />
       <span>({{format_url post.post_url}})</span>
+      <p>{{post.post_text}}</p>
     </div>
     <div class="mb-3">
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
+      Created by you on {{format_date post.created_at}}
       |
       <a class="text-white" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
