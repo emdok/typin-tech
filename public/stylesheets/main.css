@@ -1,0 +1,16 @@
+.login {
+    width: 50%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+.site-title {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(23, 65, 232)
+}
