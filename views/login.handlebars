@@ -2,7 +2,7 @@
 
   {{#if signup}}
 
-  <form class="signup-form">
+  <form>
     <div class="mb-3">
       <label class="form-label" for="username-signup">Username:</label>
       <input class="form-control"  type="text" id="username-signup" autocomplete="username" />
@@ -16,10 +16,11 @@
       <input class="form-control" type="password" id="password-signup" autocomplete="new-password" />
     </div>
     <div class="mb-3">
-      <button class="btn btn-lg fw-bold border-white bg-white" type="submit">Signup</button>
+      <button class="btn btn-lg fw-bold border-white bg-white" id="signup-submit" type="submit">Signup</button>
     </div>
   </form>
   <a class="login-link text-white" href="/login">Login instead</a>
+  <script src="/javascript/signup.js"></script>
 
   {{else}}
 
@@ -33,11 +34,11 @@
       <input class="form-control" type="password" id="password-login" autocomplete="current-password" />
     </div>
     <div class="mb-3">
-      <button class="btn btn-lg fw-bold border-white bg-white" type="submit">Login</button>
+      <button class="btn btn-lg fw-bold border-white bg-white" id="login-submit" type="submit">Login</button>
     </div>
   </form>
   <a class="login-link text-white" href="/signup">Sign Up Instead</a>
-  
+  <script src="/javascript/login.js"></script>
   {{/if}}
 
 </div>
