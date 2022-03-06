@@ -18,7 +18,7 @@ const sess = {
   store: new SequelizeStore({
     db: sequelize
   }),
-  expiration: new Date(Date.now() + (86400 * 1000))
+  expiration: new Date(Date.now() + (30000))
 };
 
 app.use(session(sess));

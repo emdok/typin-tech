@@ -17,7 +17,8 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/').then(window.location.reload())
+        
       } else {
         alert(response.statusText);
       }

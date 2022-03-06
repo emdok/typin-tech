@@ -18,13 +18,13 @@
     <div class="mb-auto">
       <header class="container">
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          {{#if loggedIn}}
           <a class="nav-link text-white" href="/dashboard">Dashboard</a>
+          <a class="nav-link text-white" href="/">Home</a>
+          {{#if loggedIn}}
           <button id="logout" class="nav-link btn btn-link text-white">Logout</button>
           {{else}}
           <a class="nav-link text-white" href="/login">Login</a>
           {{/if}}
-          <a class="nav-link text-white" href="/">Home</a>
         </nav>
         <h1 class="row">
           <a class="text-white site-title" href="/">Typin' Tech</a>
