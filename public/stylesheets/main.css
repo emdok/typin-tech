@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+.post {
+    margin-top: 100px;
+}
+
 .edit-post {
     width: 50%;
 }

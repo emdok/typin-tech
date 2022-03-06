@@ -1,9 +1,11 @@
 <div class="mb-3">
   <article class="post">
     <div class="title">
-      <a class="text-white fs-3 text-decoration-none" href="{{post_url}}" target="_blank">{{title}}</a>
-      <span>({{format_url post_url}})</span>
-      <p>{{post_text}}</p>
+      <a class="text-white" href="/post/{{id}}"><h3 class="text-white">{{title}}</h2></a>
+      <a class="text-white text-decoration-none" href="{{post_url}}" target="_blank"><span>({{format_url post_url}})</span></a>
+    </div>
+    <div class="text">
+      {{post_text}}
     </div>
     <div class="meta">
       Posted by {{user.username}} on
