@@ -2,7 +2,7 @@
 
   {{#if signup}}
 
-  <form>
+  <form class="signup-form">
     <div class="mb-3">
       <label class="form-label" for="username-signup">Username:</label>
       <input class="form-control"  type="text" id="username-signup" autocomplete="username" />
@@ -13,7 +13,7 @@
     </div>
     <div class="mb-3">
       <label class="form-label" for="password-signup">Password:</label>
-      <input class="form-control" type="password" id="password-signup" autocomplete="new-password" />
+      <input class="form-control" type="text" id="password-signup" autocomplete="new-password" />
     </div>
     <div class="mb-3">
       <button class="btn btn-lg fw-bold border-white bg-white" id="signup-submit" type="submit">Signup</button>
@@ -24,14 +24,14 @@
 
   {{else}}
 
-  <form>
+  <form class="login-form">
     <div class="mb-3">
       <label class="form-label" for="email-login">Email:</label>
       <input class="form-control" type="text" id="email-login" autocomplete="email" />
     </div>
     <div class="mb-3">
       <label class="form-label" for="password-login">Password:</label>
-      <input class="form-control" type="password" id="password-login" autocomplete="current-password" />
+      <input class="form-control" type="text" id="password-login" autocomplete="current-password" />
     </div>
     <div class="mb-3">
       <button class="btn btn-lg fw-bold border-white bg-white" id="login-submit" type="submit">Login</button>

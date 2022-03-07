@@ -17,7 +17,7 @@ async function signupFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/').then(window.location.reload())
+          location.href='/dashboard';
         
       } else {
         alert(response.statusText);
@@ -25,4 +25,4 @@ async function signupFormHandler(event) {
     }
   }
 
-document.getElementById('signup-submit').addEventListener('click', signupFormHandler);
+document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
