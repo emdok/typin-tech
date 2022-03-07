@@ -47,7 +47,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 - [jest](https://jestjs.io/)
 - [mysql2](https://www.mysql.com/)
 - [sequelize](https://sequelize.org/)
-
+- [bootstrap](https://getbootstrap.com/)
 ## Tests
 
 You can run Jest tests on the handlebars helpers by running the following:
