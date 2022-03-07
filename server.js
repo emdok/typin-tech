@@ -13,7 +13,8 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    expires: 30000
+    //expires in one hour
+    expires: 3600 * 1000
   },
   resave: false,
   saveUninitialized: true,
