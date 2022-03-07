@@ -23,8 +23,8 @@
     text-decoration: none;
 }
 
-a:hover {
-    color: rgb(23, 65, 232)
+.btn:hover, a:hover  {
+    opacity: 50% !important;
 }
 
 footer {
